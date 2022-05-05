@@ -1,0 +1,10 @@
+body
+{
+    color: aqua;
+    position: relative;
+}
+#text
+{
+    position: relative;
+    left: 700px;
+}

@@ -1,0 +1,78 @@
+#reactCompDiv {
+  background: linear-gradient(
+    90deg,
+    rgba(48, 16, 255, 1) 0%,
+    rgba(100, 115, 255, 1) 100%
+  );
+  width: 1920px;
+  height: 950px;
+  position: relative;
+  right: 40px;
+}
+#mainContentDiv {
+  background: #161a2b;
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  left: 700px;
+  top: 160px;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 4px 15px 4px rgba(0, 0, 0, 0.92);
+  box-shadow: -1px 4px 15px 4px rgba(0, 0, 0, 0.92);
+  display: flexbox;
+}
+#addBTN {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 320px;
+  left: 420px;
+  height: 60px;
+}
+#inputToDo {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+  position: absolute;
+  top: 120px;
+  left: 100px;
+}
+#taskDiv {
+  width: 400px;
+  height: auto;
+  color: aliceblue;
+  background: #161a2b;
+  position: relative;
+  left: 140px;
+  top: 250px;
+}
+.inputToDo {
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+#logoText {
+  width: 600px;
+  font-size: 40px;
+  color: white;
+  position: relative;
+  left: 70px;
+  top: 10px;
+}
