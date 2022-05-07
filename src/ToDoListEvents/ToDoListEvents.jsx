@@ -141,7 +141,7 @@ const Events = () => {
         Events
       </a>
       <a id="hrefReactComp" href="/reactComp">
-        Test 2 list
+        Tasks
       </a>
       <div id="items">
         <h1 id="h1Ev">Events</h1>

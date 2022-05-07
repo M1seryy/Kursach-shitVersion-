@@ -1,44 +1,48 @@
-import React, { useRef, useState, useEffect } from "react";
-import "../ReactComp/reactComp.css";
+import "./reactComp.css";
+import React, { useState } from "react";
 
-export const ReactComp = () => {
-  let inputOne = useRef();
-  const [nums, setNums] = useState([]);
-  const [newNum, setNewNums] = useState();
+import { Header } from "./Header";
+import { AddToDo } from "./AddToDo";
+import { ToDoLIst } from "./ToDoLIst";
 
-  let handle = () => {
-    setNums([...nums, inputOne.current.value]);
-  };
+function ReactComp() {
+  const [todo, setToDo] = useState([
+    {
+      id: 1,
+      title: "first ToDo",
+      status: true,
+    },
 
-  useEffect(() => {
-    console.log("update");
-  });
+    {
+      id: 2,
+      title: "second ToDo",
+      status: true,
+    },
+
+    {
+      id: 3,
+      title: "third ToDo",
+      status: false,
+    },
+  ]);
   return (
-    <div id="reactCompDiv">
-      <a id="hrefProd" href="/list2">
+    <div className="App">
+      <a id="hrefProdR" href="/list2">
         Products
       </a>
-      <a id="hrefEvents" href="/event">
+      <a id="hrefEventsR" href="/event">
         Events
       </a>
-      <a id="hrefReactComp" href="/reactComp">
-        Test 2 list
+      <a id="hrefReactCompR" href="/reactComp">
+        Tasks
       </a>
-      <div id="mainContentDiv">
-        <h1 id="logoText">What's the Plan for Today?</h1>
-        <input id="inputToDo" ref={inputOne} type="text" />
-        <ul id="taskDiv">
-          {nums.map((currentNum) => (
-            <li>
-              <input className="inputToDo" value={currentNum} type="text" />
-            </li>
-          ))}
-        </ul>
-        <button id="addBTN" onClick={handle}>
-          Add Task
-        </button>
+      <div className="block">
+        <Header />
+        <AddToDo todo={todo} setToDo={setToDo} />
+        <ToDoLIst todo={todo} setTodo={setToDo} />
       </div>
     </div>
   );
-};
+}
+
 export default ReactComp;

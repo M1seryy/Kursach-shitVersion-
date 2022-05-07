@@ -127,7 +127,7 @@ const List = () => {
         Events
       </a>
       <a id="hrefReactComp" href="/reactComp">
-        Test 2 list
+        Tasks
       </a>
       <div id="productItems">
         <h1 id="h1">Products</h1>

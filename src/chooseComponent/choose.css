@@ -83,6 +83,8 @@ section .content {
   color: aliceblue;
   font-size: 1.3rem;
   cursor: pointer;
+  position: relative;
+  right: 250px;
 }
 .logo:hover {
   color: hsl(29, 72%, 62%);
@@ -162,23 +164,54 @@ a[class=sign-in] {
     margin-left: 7rem;
 }
 */
-#choseList {
-  font-size: 50px;
-  color: white;
-  position: absolute;
-  top: 250px;
-  left: 800px;
+
+#burgerMenu {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  right: 130px;
+  cursor: pointer;
 }
-#eventList {
-  font-size: 50px;
-  position: absolute;
-  top: 350px;
-  left: 790px;
+#burger {
+  width: 300px;
+  min-height: 950px;
+  color: white;
+}
+.manuActive {
+  width: 400px;
+  min-height: 950px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transition: all 0.2s;
+}
+.menuNotActive {
+  transform: translateX(-100%);
+  transition: all 0.2s;
+}
+#choseListR {
+  font-size: 30px;
+  color: white;
+}
+#itemsR {
+  position: relative;
+  top: 120px;
+  right: 100px;
 }
 #all {
-  font-size: 50px;
-
-  position: absolute;
-  top: 430px;
-  left: 790px;
+  position: relative;
+  top: 50px;
+  left: 150px;
+  font-size: 20px;
+}
+#eventList {
+  position: relative;
+  top: 120px;
+  right: 50px;
+  font-size: 20px;
+}
+#react {
+  position: relative;
+  top: 170px;
+  left: 90px;
+  font-size: 20px;
 }
